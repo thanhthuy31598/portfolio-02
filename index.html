@@ -17,11 +17,11 @@
   </head>
   <body>
     <div class="portfolio__container">
-      <div id="navbar" class="navbar">
+      <div id="navbar" class="navbar display-flex">
         <div class="navbar__logo">
           <img src="./img/logo.png" alt="web logo" />
         </div>
-        <ul class="navbar__links">
+        <ul class="navbar__links display-flex">
           <li class="navbar__link"><a href="#">About</a></li>
           <li class="navbar__link"><a href="#">Experience</a></li>
           <li class="navbar__link"><a href="#">Resume</a></li>
@@ -36,10 +36,13 @@
           designing) exceptional digital experiences. Currently, I’m focused on
           building accessible, human-centered products at Upstatement.
         </p>
+        <a target="_blank" href="https://www.facebook.com/tiemchanhmo"
+          ><button>Check out my shop</button></a
+        >
       </div>
       <div class="about">
         <h1>About Me</h1>
-        <div class="about__tile">
+        <div class="about__tile display-flex">
           <div class="about__tile_left">
             <p>
               Hello! My name is Brittany and I enjoy creating things that live
@@ -77,10 +80,37 @@
         </div>
       </div>
       <div class="experience">
-        
+        <h1>Experience</h1>
+        <p>
+          Write modern, performant, maintainable code for a diverse array of
+          client and internal projects Work with a variety of different
+          languages, platforms, frameworks, and content management systems such
+          as JavaScript, TypeScript, Gatsby, React, Craft, WordPress, Prismic,
+          and Netlify Communicate with multi-disciplinary teams of engineers,
+          designers, producers, and clients on a daily basis
+        </p>
+      </div>
+      <div class="works">
+        <h1>Thing I've built</h1>
+        <div class="works__tile display-flex">
+          <div class="works__img">
+            <img src="./img/backg.jpg" alt="project" />
+          </div>
+          <div class="works__content">
+            <h1>Featured Project</h1>
+            <h3>pepoapeppoa</h3>
+            <p>
+              A minimal, dark blue theme for VS Code, Sublime Text, Atom, iTerm,
+              and more. Available on Visual Studio Marketplace, Package Control,
+              Atom Package Manager, and npm.
+            </p>
+            <div class="works__content--icons">
+              <a href="#">Link to project <i class="fab fa-github"></i></a>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
-
     <script
       src="https://kit.fontawesome.com/87cc6afaeb.js"
       crossorigin="anonymous"
