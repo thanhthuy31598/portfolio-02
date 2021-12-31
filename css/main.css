@@ -54,7 +54,8 @@ button:hover {
 }
 .portfolio__container {
   height: 100%;
-  width: 1000px;
+  width: 100%;
+  max-width: 960px;
   margin: 0 auto 50px;
   font-size: 20px;
 }
@@ -101,9 +102,6 @@ button:hover {
   margin: 120px 0;
   display: flex;
 }
-.introduction__content {
-  width: 600px;
-}
 
 .introduction__content h3 {
   color: var(--purple);
@@ -118,7 +116,7 @@ button:hover {
 }
 
 .introduction__img {
-  width: 300px;
+  min-width: 300px;
   height: 300px;
   margin-top: 120px;
   margin-left: 20px;
@@ -135,7 +133,7 @@ button:hover {
 
 .about__tile-right__avatar-wrapper {
   width: 300px;
-  height: 300px;
+  height: 350px;
   position: relative;
 }
 .about__tile-right__avatar-wrapper img {
@@ -174,8 +172,6 @@ button:hover {
 
 .works__content p {
   position: absolute;
-  width: 495px;
-  height: 140px;
   border-radius: 5px;
   background-color: var(--purple);
   top: 110px;
@@ -269,4 +265,74 @@ button:hover {
   border-right: 2px solid var(--purple);
   height: 180px;
   margin-right: 12px;
+}
+
+@media screen and (max-width: 1259px) {
+  .portfolio__container {
+    max-width: 800px;
+  }
+  .introduction__content h1 {
+    font-size: 58px;
+  }
+  .introduction__img {
+    min-width: 250px;
+    height: 250px;
+  }
+  .works__img {
+    min-width: 440px;
+    height: 280px;
+  }
+}
+@media screen and (max-width: 1023px) {
+  * {
+    font-size: 14px;
+  }
+  .navbar__link a,
+  button {
+    font-size: 16px;
+  }
+  h1 {
+    font-size: 32px;
+  }
+  .portfolio__container {
+    max-width: 600px;
+  }
+  .leftside__bar {
+    left: 28px;
+  }
+  .rightside__bar {
+    right: 28px;
+  }
+  .introduction__img {
+    min-width: 220px;
+    height: 220px;
+  }
+  .introduction__content h1 {
+    font-size: 42px;
+  }
+  .about__tile-right__avatar-wrapper {
+    width: 200px;
+    height: 250px;
+  }
+  .works__img {
+    min-width: 340px;
+    height: 200px;
+  }
+  .works__content h1 {
+    font-size: 26px;
+    margin-bottom: 12px;
+  }
+  .works__content p {
+    top: 84px;
+    padding: 16px;
+  }
+  .works__content--icons {
+    margin-top: 84px;
+  }
+  .works__content--icons i:before {
+    font-size: 16px;
+  }
+  .contact__box {
+    width: 500px;
+  }
 }
