@@ -14,6 +14,7 @@
     <!-- main css -->
     <link rel="stylesheet" href="./css/main.css" />
     <title>Portfolio</title>
+    <link rel="icon" href="./img/favicon.ico" />
   </head>
   <body>
     <div class="portfolio__container">
@@ -22,59 +23,67 @@
           <img src="./img/logo.png" alt="web logo" />
         </div>
         <ul class="navbar__links display-flex">
-          <li class="navbar__link"><a href="#">About</a></li>
-          <li class="navbar__link"><a href="#">Experience</a></li>
-          <li class="navbar__link"><a href="#">Resume</a></li>
-          <a href="#"><button class="navbar__btn">Contact</button></a>
+          <li id="about" class="navbar__link"><a href="#">About</a></li>
+          <li id="experience" class="navbar__link"><a href="#">Experience</a></li>
+          <li id="btnResume" class="navbar__link"><a href="#">Resume</a></li>
+          <li id="contact" class="navbar__link">
+            <button class="navbar__btn">Contact</button>
+          </li>
         </ul>
       </div>
       <div class="introduction">
-        <h3>Hi, my name is</h3>
-        <h1>Pé Poa Péo</h1>
-        <p>
-          I’m a software engineer specializing in building (and occasionally
-          designing) exceptional digital experiences. Currently, I’m focused on
-          building accessible, human-centered products at Upstatement.
-        </p>
-        <a target="_blank" href="https://www.facebook.com/tiemchanhmo"
-          ><button>Check out my shop</button></a
-        >
+        <div class="introduction__content">
+          <h3>Hi, my name is</h3>
+          <h1>Luong Thanh Thuy</h1>
+          <p>
+            I'm just a girl who loves sewing, embroidery,...I also have an
+            online store for my products. But in July, the social distancing had
+            coming, I had to stay at home. Because of that, I had a lot of time
+            to learn more. My friend told me about code and how is he working.
+            So I decided to learn about Front End, it had been 2 months since I
+            started.
+          </p>
+          <a target="_blank" href="https://www.facebook.com/tiemchanhmo"
+            ><button>Check out my store</button></a
+          >
+        </div>
+        <div class="introduction__img">
+          <img src="./img/tiemchanhmo.png" alt="" />
+        </div>
       </div>
       <div class="about">
         <h1>About Me</h1>
         <div class="about__tile display-flex">
           <div class="about__tile_left">
             <p>
-              Hello! My name is Brittany and I enjoy creating things that live
-              on the internet. My interest in web development started back in
-              2012 when I decided to try editing custom Tumblr themes — turns
-              out hacking together a custom reblog button taught me a lot about
-              HTML & CSS!
+              Hello! My name is Thuy and I enjoy creating things that live on
+              the internet. At first, I'm not in love with technology,
+              especially with computers. My interest in web development started
+              back in few months ago when I decided to learn about it — turns
+              out it's cooler than thought.
             </p>
             <p>
-              Fast-forward to today, and I’ve had the privilege of working at an
-              advertising agency, a start-up, a huge corporation, and a
-              student-led design studio. My main focus these days is building
-              accessible, inclusive products and digital experiences at
-              Upstatement for a variety of clients.
+              Most of my knowledge came from the Internet, I had learning from a
+              lot of website, for example: W3School, F8, Youtube,... My friend
+              also tell me, and show me things I don't understand.
             </p>
             <p>
-              I also recently launched a course that covers everything you need
-              to build a web app with the Spotify API using Node & React.
+              It's difficult to learn, especially the JavaScript, but it's
+              really interesting too. I also know a tiny about Vue, just tiny.
             </p>
 
-            <p>Here are a few technologies I’ve been working with recently:</p>
+            <p>Here are a few technologies I’ve been learning recently:</p>
 
             <ul class="about__tile_left-lists">
-              <li class="about__tile_left-list">Hơi Péo</li>
-              <li class="about__tile_left-list">Péo</li>
-              <li class="about__tile_left-list">Rất Péo</li>
-              <li class="about__tile_left-list">Péo Néo Péo Néo</li>
+              <li class="about__tile_left-list">HTML</li>
+              <li class="about__tile_left-list">CSS</li>
+              <li class="about__tile_left-list">JavaScript</li>
+              <li class="about__tile_left-list">Vue</li>
             </ul>
           </div>
           <div class="about__tile-right">
             <div class="about__tile-right__avatar-wrapper">
-              <img src="./img/introduction.jpeg" alt="mypic" />
+              <img src="./img/introduc.jpg" alt="mypic" />
             </div>
           </div>
         </div>
@@ -82,33 +91,53 @@
       <div class="experience">
         <h1>Experience</h1>
         <p>
-          Write modern, performant, maintainable code for a diverse array of
-          client and internal projects Work with a variety of different
-          languages, platforms, frameworks, and content management systems such
-          as JavaScript, TypeScript, Gatsby, React, Craft, WordPress, Prismic,
-          and Netlify Communicate with multi-disciplinary teams of engineers,
-          designers, producers, and clients on a daily basis
+          I'm just a new beginner, I don't have much experience, all I do untill
+          now is learning and trying my best. But I will be pleasure to become
+          one of your team.
         </p>
       </div>
       <div class="works">
         <h1>Thing I've built</h1>
         <div class="works__tile display-flex">
           <div class="works__img">
-            <img src="./img/backg.jpg" alt="project" />
+            <img src="./img/portfolio.png" alt="project" />
           </div>
           <div class="works__content">
             <h1>Featured Project</h1>
-            <h3>pepoapeppoa</h3>
+            <h3>Portfolio</h3>
             <p>
-              A minimal, dark blue theme for VS Code, Sublime Text, Atom, iTerm,
-              and more. Available on Visual Studio Marketplace, Package Control,
-              Atom Package Manager, and npm.
+              This is a simple portfolio, introduce about myself. This project
+              totally using HTML, CSS, and JavaScript.
             </p>
             <div class="works__content--icons">
-              <a href="#">Link to project <i class="fab fa-github"></i></a>
+              <a href="https://github.com/thanhthuy31598/portfolio-02">Link to project <i class="fab fa-github"></i></a>
             </div>
           </div>
         </div>
+      </div>
+      <div class="contact display-flex">
+        <h1>Get In Touch</h1>
+        <div class="contact__box display-flex">
+          <h3>Want to work together or have any questions?</h3>
+          <a href="mailto:lngththuy@gmail.com">
+            <button>Say Hello</button>
+          </a>
+        </div>
+      </div>
+      <footer>Designed & Built by Thanh Thủy</footer>
+      <div class="leftside__bar">
+        <a target="_blank" href="https://github.com/thanhthuy31598/portfolio-02"><i class="fab fa-github"></i></a>
+        <a target="_blank" href="https://www.instagram.com/mahh.dreamm/"
+          ><i class="fab fa-instagram"></i
+        ></a>
+        <a target="_blank" href="https://www.facebook.com/madd.sunn.socute"
+          ><i class="fab fa-facebook"></i
+        ></a>
+        <div></div>
+      </div>
+      <div class="rightside__bar">
+        <a href="mailto:lngththuy@gmail.com">lngththuy@gmail.com</a>
+        <div></div>
       </div>
     </div>
     <script
