@@ -13,6 +13,17 @@ window.onscroll = function () {
 //   var scrollDiv = document.querySelector('.about').offsetTop - 100;
 //   window.scrollTo({ top: scrollDiv, behavior: 'smooth' });
 // });
+document
+  .querySelector('.navbar__action-bars')
+  .addEventListener('click', function () {
+    const currSideBarDisplay = document.querySelector(
+      '.navbar__action-rightsidebar'
+    ).style.visibility;
+    document.querySelector('.navbar__action-rightsidebar').style.visibility = currSideBarDisplay === 'visible' ? 'hidden' : 'visible';
+    document.querySelector('.navbar__action-rightsidebar').style.transform = currSideBarDisplay === 'visible' ? 'translate3d(105%, 0px, 0px)' : 'translate3d(0, 0px, 0px)';
+    document.body.style.overflow = currSideBarDisplay === 'visible' ? 'auto' : 'hidden';
+    // document.querySelector('.navbar__action-rightsidebar-background').style.display = 'initial'
+  });
 
 document.querySelectorAll('.navbar__link').forEach((btn) => {
   if (btn.id === 'btnResume') {
