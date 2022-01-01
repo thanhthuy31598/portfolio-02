@@ -19,9 +19,24 @@ document
     const currSideBarDisplay = document.querySelector(
       '.navbar__action-rightsidebar'
     ).style.visibility;
-    document.querySelector('.navbar__action-rightsidebar').style.visibility = currSideBarDisplay === 'visible' ? 'hidden' : 'visible';
-    document.querySelector('.navbar__action-rightsidebar').style.transform = currSideBarDisplay === 'visible' ? 'translate3d(105%, 0px, 0px)' : 'translate3d(0, 0px, 0px)';
-    document.body.style.overflow = currSideBarDisplay === 'visible' ? 'auto' : 'hidden';
+    console.log(currSideBarDisplay);
+    document.querySelector('.navbar__action-rightsidebar').style.visibility =
+      currSideBarDisplay === 'visible' ? 'hidden' : 'visible';
+    document.querySelector('.navbar__action-rightsidebar').style.transform =
+      currSideBarDisplay === 'visible'
+        ? 'translate3d(105%, 0px, 0px)'
+        : 'translate3d(0, 0px, 0px)';
+    // document.body.style.overflow = currSideBarDisplay === 'visible' || !currSideBarDisplay ? 'hidden' : 'auto';
+    if (!currSideBarDisplay) {
+      document.body.style.overflow = 'hidden';
+    } else if (
+      document.querySelector('.navbar__action-rightsidebar').style
+        .visibility === 'visible'
+    ) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = 'auto';
+    }
     // document.querySelector('.navbar__action-rightsidebar-background').style.display = 'initial'
   });
 
